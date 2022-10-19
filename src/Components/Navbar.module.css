@@ -1,0 +1,18 @@
+.active {
+    text-decoration: none;
+    color:teal;
+    font-size: 25px;
+    
+}
+
+.default{
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+
+}
+
+a{
+    cursor: pointer;
+}
+

@@ -1,9 +1,13 @@
+import Navbar from "./Components/Navbar";
+import AllRoutes from "./Routes/AllRoutes";
 
 function App() {
   return (
-    <div className="App">
-     Hello World,WellCome To My PortFolio
-    </div>
+    <>
+    <Navbar />
+    <AllRoutes />
+    
+    </>
   );
 
 //npm install gh-pages --save-dev
