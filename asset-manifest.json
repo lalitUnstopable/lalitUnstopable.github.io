@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0edc1fa6.css",
-    "main.js": "/static/js/main.0e3d5de2.js",
+    "main.css": "/static/css/main.17b05476.css",
+    "main.js": "/static/js/main.0b05665c.js",
     "static/media/gif": "/static/media/3d08e03cb40252526fee2036a67f07f1.58aa495099fe4fd95fcc.gif",
-    "static/media/Lalit Profile Image.jpeg": "/static/media/Lalit Profile Image.3ce4444c44a679aeb3ba.jpeg",
+    "static/media/LalitProfile.JPG": "/static/media/LalitProfile.6b203bd40218ba211441.JPG",
     "index.html": "/index.html",
-    "main.0edc1fa6.css.map": "/static/css/main.0edc1fa6.css.map",
-    "main.0e3d5de2.js.map": "/static/js/main.0e3d5de2.js.map"
+    "main.17b05476.css.map": "/static/css/main.17b05476.css.map",
+    "main.0b05665c.js.map": "/static/js/main.0b05665c.js.map"
   },
   "entrypoints": [
-    "static/css/main.0edc1fa6.css",
-    "static/js/main.0e3d5de2.js"
+    "static/css/main.17b05476.css",
+    "static/js/main.0b05665c.js"
   ]
 }
