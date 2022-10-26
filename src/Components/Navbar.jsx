@@ -1,4 +1,3 @@
-
 import {Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, Flex, HStack, IconButton,Spacer, useColorMode, useDisclosure, VStack } from '@chakra-ui/react';
 import { FaSun, FaMoon } from "react-icons/fa";
 import React, { useRef } from 'react'
@@ -32,7 +31,7 @@ const Navbar = () => {
         zIndex={10}
         position="sticky"
         top="0"
-        bgColor={isDark ? "lightgray" : "white"}
+        bgColor={isDark ? "gray.800" : "white"}
         borderBottom="1px"
         borderColor="gray.100"
         h="60px" 
@@ -55,7 +54,7 @@ const Navbar = () => {
             )
         })
      }
-                    <IconButton 
+                    <IconButton mr="10px"
                     isRound={true}
                     icon={isDark ? <FaSun /> : <FaMoon />}
                     onClick={toggleColorMode}
@@ -66,10 +65,18 @@ const Navbar = () => {
      <HStack
         px="10px"
         h="60px" 
-        borderBottom="1px"
-        borderColor="gray.100"
+        // borderBottom="1px"
+        // borderColor="gray.100"
         alignItems={"center"}
         display={["flex", "flex", "flex", "none"]}
+        zIndex={10}
+        position="sticky"
+        top="0"
+        left="0"
+        // bottom="0"
+        overflow="visible"
+        // opacity={"1"}
+      
       
       >
         <IconButton
@@ -84,7 +91,7 @@ const Navbar = () => {
         <Spacer />
         {/* <Social /> */}
         <IconButton
-          ml="10px"
+          ml="-50px"
           isRound
           icon={isDark ? <FaSun /> : <FaMoon />}
           onClick={toggleColorMode}
