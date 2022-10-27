@@ -3,10 +3,12 @@ import React from 'react';
 import image from "../Assets/3d08e03cb40252526fee2036a67f07f1.gif";
 import pdf from "../Assets/Lalit-Pawar-Resume.pdf";
 import { TypeAnimation } from "react-type-animation";
+
 // import Style from "../CSS/Home.module.css"
 
 
 const Home = () => {
+
   return (
     <>
     <Box w="100%" h="100%">

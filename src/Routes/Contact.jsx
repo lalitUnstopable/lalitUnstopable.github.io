@@ -78,7 +78,7 @@ const Contact = () => {
 
                 >
                  
-                  <a href="https://www.linkedin.com/in/lalit-pawar-8919a9254/">
+                  <a href="https://www.linkedin.com/in/lalit-pawar-1b5525214/">
                     <Button
                       leftIcon=<Image
                         boxSize="20px"
@@ -195,7 +195,7 @@ const Contact = () => {
                   py={5}
                   gap="4"
                 >
-                    <a href="https://www.linkedin.com/in/lalit-pawar-8919a9254/">
+                    <a href="https://www.linkedin.com/in/lalit-pawar-1b5525214/">
                     <Button
                     style={{dispay:"block"}}
                       leftIcon=<Image
