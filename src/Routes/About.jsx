@@ -1,4 +1,4 @@
-import { Box,Center,HStack,Img, ListItem, SimpleGrid, Text, UnorderedList } from '@chakra-ui/react'
+import { Box,Center,HStack,Image,Img, ListItem, SimpleGrid, Text, UnorderedList } from '@chakra-ui/react'
 import React from 'react';
 import prof from "../Assets/LalitProfile.JPG";
 import GitHubCalendar from 'react-github-calendar';
@@ -157,8 +157,16 @@ const About = () => {
             </SimpleGrid>
         </HStack>
         <Text textAlign="center" lineHeight={"2.5"} fontSize={["20px","30px","30px","50px"]} fontWeight={"bold"} ml="20px" mt="30px" mb="20px">My Github Stats</Text>
-        <div style={{width:"100%",margin:"auto",marginBottom:"20px"}}>
-        <img align="center" src="http://github-readme-streak-stats.herokuapp.com?user=lalitUnstopable&theme=flag-india" style={{width:"50%",margin:"auto"}} alt="" /> 
+        <div style={{width:"100%",margin:"auto",marginBottom:"20px",display:"flex",flexDirection:"column",gap:"10px"}}>
+        <Image align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=lalitUnstopable&theme=react&hide_border=false" alt="" w={["90%","90%","90%","50%"]} m="auto"/> 
+        <Image align="center" src="https://github-readme-stats.vercel.app/api?username=lalitUnstopable&theme=react&hide_border=false&show_icons=true&locale=en" alt="" w={["90%","90%","90%","50%"]} m="auto"/> 
+        <Image align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lalitUnstopable&theme=react&hide_border=false&include_all_commits=true&layout=compact" alt="" w={["90%","90%","90%","50%"]} m="auto"/> 
+        <Image align="center" src="https://activity-graph.herokuapp.com/graph?username=lalitUnstopable&theme=react-dark&hide_border=true" alt="" w={["90%","90%","90%","50%"]} m="auto"/> 
+        {/* ![](https://github-readme-stats.vercel.app/api?username=lalitUnstopable&theme=react&hide_border=false&show_icons=true&locale=en)<br />
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=lalitUnstopable&theme=react&hide_border=false&include_all_commits=true&layout=compact)
+
+![](https://activity-graph.herokuapp.com/graph?username=lalitUnstopable&theme=react-dark&hide_border=true) */}
         </div>
     </>
   )

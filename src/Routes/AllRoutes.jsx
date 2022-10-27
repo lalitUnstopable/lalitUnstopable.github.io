@@ -9,6 +9,7 @@ import Skills from './Skills';
 const AllRoutes = () => {
   return (
     <>
+    
       <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/about" element={<About />}/>
@@ -16,6 +17,7 @@ const AllRoutes = () => {
             <Route path="/projects" element={<Projects />}/>
             <Route path="/contact" element={<Contact />}/>
      </Routes>  
+ 
     </>
   )
 }
