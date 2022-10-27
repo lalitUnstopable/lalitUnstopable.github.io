@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.17b05476.css",
-    "main.js": "/static/js/main.5a6337b5.js",
+    "main.js": "/static/js/main.de19d5a5.js",
     "static/media/gif": "/static/media/3d08e03cb40252526fee2036a67f07f1.58aa495099fe4fd95fcc.gif",
     "static/media/project1.png": "/static/media/project1.def68d4ef4c49546e814.png",
     "static/media/LalitProfile.JPG": "/static/media/LalitProfile.6b203bd40218ba211441.JPG",
@@ -9,10 +9,10 @@
     "static/media/project.jpeg": "/static/media/project.93bba6f3973d81c6e8fd.jpeg",
     "index.html": "/index.html",
     "main.17b05476.css.map": "/static/css/main.17b05476.css.map",
-    "main.5a6337b5.js.map": "/static/js/main.5a6337b5.js.map"
+    "main.de19d5a5.js.map": "/static/js/main.de19d5a5.js.map"
   },
   "entrypoints": [
     "static/css/main.17b05476.css",
-    "static/js/main.5a6337b5.js"
+    "static/js/main.de19d5a5.js"
   ]
 }
