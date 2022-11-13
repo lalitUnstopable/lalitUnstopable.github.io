@@ -1,0 +1,71 @@
+
+
+.framework{
+    background: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    padding-top: 3rem;
+    position: relative;
+    transform-origin: top center;
+    --rotate: 10deg;
+    transform: rotateX(var(--rotate));
+    transition: transform 0.2s;
+    box-shadow:rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.framework:before {
+    right: auto;
+    left: 20px;
+}
+
+.framework:hover {
+    transform: rotateX(-20deg);
+}
+
+card:before,
+.framework:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #5c0dac;
+    border: 1px solid #000;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    top: 15px;
+    right: 20px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.framework:before,
+.framework:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #5c0dac;
+    border: 1px solid #000;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    top: 15px;
+    right: 20px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.framework img {
+    height: 80px;
+    width: 100%;
+    object-fit: contain;
+}
+
+img {
+    max-width: 100%;
+}
+
+.framework-card p {
+    font-family: 'radnika-next';
+    font-weight: 900;
+}
+

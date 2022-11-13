@@ -1,7 +1,6 @@
-import {Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, Flex, HStack, IconButton,Spacer, useColorMode, useDisclosure, VStack } from '@chakra-ui/react';
+import {Text,Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, Flex, HStack, IconButton,Spacer, useColorMode, useDisclosure, VStack } from '@chakra-ui/react';
 import { FaSun, FaMoon } from "react-icons/fa";
 import React, { useRef } from 'react'
-import { NavLink } from 'react-router-dom';
 import Style from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import { HamburgerIcon } from "@chakra-ui/icons";
@@ -42,21 +41,21 @@ const Navbar = () => {
       { 
         links.map((link)=>{
             return (
-                <NavLink 
+                <Link style={{fontSize:"25px",textDecoration:"none",position: "relative"}} 
                   className={({isActive}) => {
                     return isActive ? Style.active : Style.default;
                   }}
                   key = {link.path}
                   to={link.path}
                   
-                > {link.title}
-                 </NavLink>
+                >{link.title}
+                 </Link>
             )
         })
      }
                     <IconButton mr="10px"
                     isRound={true}
-                    icon={isDark ? <FaSun /> : <FaMoon />}
+                    icon={isDark ? <FaMoon /> : <FaSun />}
                     onClick={toggleColorMode}
                     />
      </Flex>
@@ -65,20 +64,14 @@ const Navbar = () => {
      <HStack
         px="10px"
         h="60px" 
-        // borderBottom="1px"
-        // borderColor="gray.100"
         alignItems={"center"}
         display={["flex", "flex", "flex", "none"]}
         zIndex={10}
         position="sticky"
         top="0"
         left="0"
-        // bottom="0"
-        overflow="visible"
-        // opacity={"1"}
-      
-      
-      >
+         overflow="visible"
+        >
         <IconButton
           aria-label="Open Menu"
           mr={2}

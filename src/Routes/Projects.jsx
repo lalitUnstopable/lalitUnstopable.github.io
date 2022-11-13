@@ -11,8 +11,8 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
-import project1 from "../Assets/project.jpeg";
-import project2 from "../Assets/project1.png";
+import WhiteFeather from "../Assets/WhiteFeather.jpeg";
+import lalitPortfolio from "../Assets/lalitPortfolio.jpeg";
 import freshly from "../Assets/Freshly.jpeg";
 import Todo from "../Assets/TodoApp.jpeg";
 
@@ -59,8 +59,7 @@ const Projects = () => {
             <Box
                 style={{
                   padding: "20px",
-                  boxShadow:
-                    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
                 }}
               >
                 <Center>
@@ -108,8 +107,10 @@ const Projects = () => {
               <Box
                 style={{
                   padding: "20px",
-                  boxShadow:
-                    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
+
+                  // boxShadow:
+                    // "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
                 }}
               >
                 <Center>
@@ -158,7 +159,8 @@ const Projects = () => {
               <Box
                 style={{
                   padding: "20px",
-                  boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
+
                 }}
               >
                 <Center>
@@ -167,20 +169,21 @@ const Projects = () => {
                     boxSize="200px"
                     width="100%"
                     borderRadius="20px"
-                    src={project2}
+                    src={WhiteFeather}
                     alt="Dan Abramov"
                   />
                 </Center>
                 <br />
                 <Center>
-                  <Heading>J-Crew Clone</Heading>
+                  <Heading>WhiteFeather</Heading>
                 </Center>
                 <br />
                 <Center>
                   <Text>
-                  J.Crew has set the industry standard for quality, design, and style by sourcing fine fabrics from top-notch domestic and 
-                  international mills. It create signature pieces—from Italian cashmere sweaters, to Japanese seersucker suits,
-                  that will find a forever home in your wardrobe.
+                  WhiteFeather is an  e-commerce 
+                  plateform that sells cosmetics and personal care products. It
+                  has given a premium experience of makeup and skincare that has raised questions on general beauty standards and
+                   has spread across the movement of positivity and self-confidence.
                   </Text>
                 </Center>
                 <br />
@@ -189,16 +192,17 @@ const Projects = () => {
 
                   <b>Tech Stack </b> : 
                   </Text> 
-                   Html,css,Javascript
+                   ReactJs,ChakraUI
+                
                 </Center>
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
-                  <a  href="https://github.com/shivamgupta8482/jcrewteam">
+                  <a  href="https://github.com/KanhaiyaChauhan037/succinct-wrench-1095">
                     <Button>Github</Button>
                   </a>
-                  <a href="https://bejewelled-klepon-a99de5.netlify.app/">
+                  <a href="https://mellifluous-froyo-0d1b1d.netlify.app/">
                     <Button>Deploy</Button>
                   </a>
                 </div>
@@ -207,30 +211,26 @@ const Projects = () => {
               <Box
                 style={{
                   padding: "20px",
-                  boxShadow:
-                    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
-                }}
-              >
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" }}>
                 <Center>
                   {" "}
                   <Image
                     boxSize="200px"
                     width="100%"
                     borderRadius="20px"
-                    src={project1}
+                    src={lalitPortfolio}
                     alt="Dan Abramov"
                   />
                 </Center>
                 <br />
                 <Center>
-                  <Heading>boAt Clone</Heading>
+                  <Heading>My Portfolio</Heading>
                 </Center>
                 <br />
                 <Center>
                   <Text>
-                  The boAt has got an astonishing collection of earphones, 
-                  earbuds, headphones, and wireless speakers that stands apart due to the quality, 
-                  affordability, and world-class designs that the company offers.
+                  My portfolio is a compilation of materials that exemplifies my beliefs, skills, qualifications, education, training and experiences. 
+                  It provides me personality and work ethic.
                   </Text>
                 </Center>
                 <br />
@@ -244,10 +244,10 @@ const Projects = () => {
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
-                  <a  href="https://github.com/rohity0/Team-BOAT">
+                  <a  href="https://github.com/lalitUnstopable/lalitUnstopable.github.io/tree/master">
                     <Button>Github</Button>
                   </a>
-                  <a  href="https://famous-nougat-33aef3.netlify.app/">
+                  <a  href="https://lalitunstopable.github.io/">
                     <Button>Deploy</Button>
                   </a>
                 </div>
@@ -376,20 +376,19 @@ const Projects = () => {
                     boxSize="200px"
                     width="100%"
                     borderRadius="20px"
-                    src={project1}
+                    src={lalitPortfolio}
                     alt="Dan Abramov"
                   />
                 </Center>
                 <br />
                 <Center>
-                  <Heading>boAt Clone</Heading>
+                  <Heading>My Portfolio</Heading>
                 </Center>
                 <br />
                 <Center>
                   <Text>
-                  The boAt has got an astonishing collection of earphones, 
-                  earbuds, headphones, and wireless speakers that stands apart due to the quality, 
-                  affordability, and world-class designs that the company offers.
+                  My portfolio is a compilation of materials that exemplifies my beliefs, skills, qualifications, education, training and experiences. 
+                  It provides me personality and work ethic.
                     <br />
                     <br />
                     <b>Tech Stack </b>:ReactJs,Chakra Ui
@@ -400,10 +399,10 @@ const Projects = () => {
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
-                  <a href="https://github.com/rohity0/Team-BOAT">
+                  <a href="https://github.com/lalitUnstopable/lalitUnstopable.github.io/tree/master">
                     <Button>Github</Button>
                   </a>
-                  <a href="https://famous-nougat-33aef3.netlify.app/">
+                  <a href="https://lalitunstopable.github.io/">
                     <Button>Deploy</Button>
                   </a>
                 </div>
@@ -422,20 +421,21 @@ const Projects = () => {
                     boxSize="200px"
                     width="100%"
                     borderRadius="20px"
-                    src={project2}
+                    src={WhiteFeather}
                     alt="Dan Abramov"
                   />
                 </Center>
                 <br />
                 <Center>
-                  <Heading>J-Crew Clone</Heading>
+                  <Heading>WhiteFeather</Heading>
                 </Center>
                 <br />
                 <Center>
                   <Text>
-                  J.Crew has set the industry standard for quality, design, and style by sourcing fine fabrics from top-notch domestic 
-                  and international mills. It create signature pieces—from Italian cashmere sweaters, to Japanese seersucker suits, 
-                  that will find a forever home in your wardrobe.
+                  WhiteFeather is an  e-commerce 
+                  plateform that sells cosmetics and personal care products. It
+                  has given a premium experience of makeup and skincare that has raised questions on general beauty standards and
+                   has spread across the movement of positivity and self-confidence.
                     <br />
                     <br />
                    <b>Tech Stack </b> :Html,Css,JavaScript,Github 
@@ -447,10 +447,10 @@ const Projects = () => {
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
-                  <a href="https://github.com/shivamgupta8482/jcrewteam">
+                  <a href="https://github.com/KanhaiyaChauhan037/succinct-wrench-1095">
                     <Button>Github</Button>
                   </a>
-                  <a href="https://bejewelled-klepon-a99de5.netlify.app/">
+                  <a href="https://mellifluous-froyo-0d1b1d.netlify.app/">
                     <Button>Deploy</Button>
                   </a>
                 </div>

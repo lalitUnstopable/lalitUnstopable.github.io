@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Styles from "../CSS/Skills.module.css"
 
 import {
   Stack,
@@ -54,7 +55,8 @@ const Contact = () => {
               <WrapItem>
                 <Center>
                   <Image
-                    borderRadius="50px"
+                  //  boxShadow= "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" p="15px"
+                   borderRadius="50px"
                     width="60%"
                     src="https://cdn.dribbble.com/users/4874/screenshots/2031709/messageincoming.gif"
                     alt="Dan Abramov"
@@ -74,9 +76,8 @@ const Contact = () => {
                   width="100%"
                   py={4}
                   gap="4"
-                 
-
-                >
+ 
+                 >
                  
                   <a href="https://www.linkedin.com/in/lalit-pawar-1b5525214/">
                     <Button
@@ -123,7 +124,6 @@ const Contact = () => {
                     </Button>
                   </a>
                 </Box>
-
                 <Input
                   htmlSize={50}
                   width="auto"
@@ -210,8 +210,6 @@ const Contact = () => {
                       LinkedIn
                     </Button>
                   </a>
-                 
-
                   <a href="https://github.com/lalitUnstopable">
                     <Button
                       leftIcon=<Image
