@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.17b05476.css",
-    "main.js": "/static/js/main.408f2925.js",
+    "main.css": "/static/css/main.d967d845.css",
+    "main.js": "/static/js/main.c2375b96.js",
     "static/media/gif": "/static/media/3d08e03cb40252526fee2036a67f07f1.58aa495099fe4fd95fcc.gif",
-    "static/media/project1.png": "/static/media/project1.def68d4ef4c49546e814.png",
     "static/media/LalitProfile.JPG": "/static/media/LalitProfile.6b203bd40218ba211441.JPG",
     "static/media/Lalit Pawar-Resume.pdf": "/static/media/Lalit Pawar-Resume.d5106f73e24ba3f4e1e6.pdf",
     "static/media/Freshly.jpeg": "/static/media/Freshly.1b8e6f0a4dde05e7f290.jpeg",
-    "static/media/project.jpeg": "/static/media/project.93bba6f3973d81c6e8fd.jpeg",
+    "static/media/WhiteFeather.jpeg": "/static/media/WhiteFeather.da8ad154da90e7c65b92.jpeg",
+    "static/media/lalitPortfolio.jpeg": "/static/media/lalitPortfolio.c08d173508ee3718d4af.jpeg",
     "static/media/TodoApp.jpeg": "/static/media/TodoApp.341b634d7232fb21b164.jpeg",
     "index.html": "/index.html",
-    "main.17b05476.css.map": "/static/css/main.17b05476.css.map",
-    "main.408f2925.js.map": "/static/js/main.408f2925.js.map"
+    "main.d967d845.css.map": "/static/css/main.d967d845.css.map",
+    "main.c2375b96.js.map": "/static/js/main.c2375b96.js.map"
   },
   "entrypoints": [
-    "static/css/main.17b05476.css",
-    "static/js/main.408f2925.js"
+    "static/css/main.d967d845.css",
+    "static/js/main.c2375b96.js"
   ]
 }
