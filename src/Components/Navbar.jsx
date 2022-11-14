@@ -17,7 +17,7 @@ const Navbar = () => {
 
     const { colorMode, toggleColorMode } = useColorMode();
 
-    const isDark = colorMode === "light";
+    const isDark = colorMode === "dark";
 
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
@@ -30,7 +30,7 @@ const Navbar = () => {
         zIndex={10}
         position="sticky"
         top="0"
-        bgColor={isDark ? "white" : "gray.800"}
+        bgColor={isDark ? "gray.800" : "white"}
         borderBottom="1px"
         borderColor="gray.100"
         h="60px" 

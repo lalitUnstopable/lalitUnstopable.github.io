@@ -15,7 +15,6 @@ import WhiteFeather from "../Assets/WhiteFeather.jpeg";
 import lalitPortfolio from "../Assets/lalitPortfolio.jpeg";
 import freshly from "../Assets/Freshly.jpeg";
 import Todo from "../Assets/TodoApp.jpeg";
-import Styles from "../CSS/Skills.module.css";
 
 const Projects = () => {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 950);
