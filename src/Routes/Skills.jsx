@@ -23,12 +23,12 @@ const Skills = () => {
     },
     {
       id: 3,
-      name: "Javascript",
+      name: "JavaScript",
       link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     },
     {
       id: 4,
-      name: "React",
+      name: "ReactJs",
       link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
     },
     {
@@ -38,12 +38,12 @@ const Skills = () => {
     },
     {
       id: 6,
-      name: "NodeJS",
+      name: "NodeJs",
       link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
     },
     {
       id: 7,
-      name: "Express",
+      name: "ExpressJs",
       link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
     },
     {
@@ -156,7 +156,7 @@ const Skills = () => {
                     <div style={{dispay:"grid"}} className={Styles.framework}>
                       <img src={el.link} alt="Skils" />
                       <br />
-                      <Center><Text>{el.name}</Text></Center>
+                      <Center><Text >{el.name}</Text></Center>
                     </div>
                   </Box>
                 );

@@ -2,7 +2,6 @@ import { Box,Center,HStack,Image,Img, ListItem, SimpleGrid, Text, UnorderedList 
 import React from 'react';
 import prof from "../Assets/LalitProfile.JPG";
 import GitHubCalendar from 'react-github-calendar';
-import { isDark } from "@chakra-ui/theme-tools";
 
 const About = () => {
   return (

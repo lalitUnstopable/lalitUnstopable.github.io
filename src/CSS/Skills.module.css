@@ -1,6 +1,7 @@
 
 
 .framework{
+    font-weight: bold;
     background: #fff;
     border-radius: 20px;
     padding: 1rem;
@@ -68,4 +69,6 @@ img {
     font-family: 'radnika-next';
     font-weight: 900;
 }
+
+
 

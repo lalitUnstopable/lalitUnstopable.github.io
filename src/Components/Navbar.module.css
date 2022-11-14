@@ -40,10 +40,13 @@ a:before{
   width: 0;
   height: 3px;
   transition: all 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 a:hover {
  background-position: 0;
+ font-weight: bold;
+
 }
 
 a:hover::before{

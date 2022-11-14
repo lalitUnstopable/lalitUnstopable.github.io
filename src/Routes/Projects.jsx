@@ -15,7 +15,7 @@ import WhiteFeather from "../Assets/WhiteFeather.jpeg";
 import lalitPortfolio from "../Assets/lalitPortfolio.jpeg";
 import freshly from "../Assets/Freshly.jpeg";
 import Todo from "../Assets/TodoApp.jpeg";
-
+import Styles from "../CSS/Skills.module.css";
 
 const Projects = () => {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 950);
@@ -62,7 +62,7 @@ const Projects = () => {
                   boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
                 }}
               >
-                <Center>
+                <Center >
                   {" "}
                   <Image
                     boxSize="200px"
@@ -78,7 +78,7 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                  <Text>
+                  <Text fontWeight={"medium"}>
                   Todo App project is an application specially built to keep track of tasks that need to be done.
                   This application will be like a task keeper where the user would be able to enter the tasks 
                   that they need to do. Once they are done with their tasks they can also remove them from the list.
@@ -90,17 +90,17 @@ const Projects = () => {
 
                   <b>Tech Stack </b> :
                   </Text>
-                  Html,Css,ReactJs
+                 <b> Html,Css,ReactJs</b>
                 </Center>
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a  href="https://github.com/lalitUnstopable/Todo-App">
-                    <Button>Github</Button>
+                    <Button colorScheme='teal' variant='solid'>Github</Button>
                   </a>
                   <a  href="https://localdata.netlify.app/">
-                    <Button>Deploy</Button>
+                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -129,7 +129,7 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                  <Text>
+                  <Text fontWeight={"medium"}>
                   Freshly is the leading prepared meal delivery subscription service providing nutritionist-approved, 
                   balanced meals that are delivered fresh to your door and ready-to-eat
                   in three minutes. Freshly delivers effortless nourishment that works for real life.
@@ -141,17 +141,17 @@ const Projects = () => {
 
                   <b>Tech Stack </b> :
                   </Text>
-                  Html,Css,JavaScript
+                 <b> Html,Css,Js</b>
                 </Center>
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a  href="https://github.com/lalitUnstopable/FreshlyClone/tree/main/Freshly%20Clone">
-                    <Button>Github</Button>
+                    <Button colorScheme='teal' variant='solid'>Github</Button>
                   </a>
                   <a  href="https://lucky-longma-b5b6e1.netlify.app/">
-                    <Button>Deploy</Button>
+                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -179,7 +179,7 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                  <Text>
+                  <Text fontWeight={"medium"}>
                   WhiteFeather is an  e-commerce 
                   plateform that sells cosmetics and personal care products. It
                   has given a premium experience of makeup and skincare that has raised questions on general beauty standards and
@@ -192,7 +192,7 @@ const Projects = () => {
 
                   <b>Tech Stack </b> : 
                   </Text> 
-                   ReactJs,ChakraUI
+                <b>ReactJs,ChakraUI</b>
                 
                 </Center>
                 <br />
@@ -200,10 +200,10 @@ const Projects = () => {
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a  href="https://github.com/KanhaiyaChauhan037/succinct-wrench-1095">
-                    <Button>Github</Button>
+                    <Button colorScheme='teal' variant='solid'>Github</Button>
                   </a>
                   <a href="https://mellifluous-froyo-0d1b1d.netlify.app/">
-                    <Button>Deploy</Button>
+                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -211,7 +211,8 @@ const Projects = () => {
               <Box
                 style={{
                   padding: "20px",
-                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" }}>
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" }}
+                  >
                 <Center>
                   {" "}
                   <Image
@@ -228,7 +229,7 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                  <Text>
+                  <Text fontWeight={"medium"}>
                   My portfolio is a compilation of materials that exemplifies my beliefs, skills, qualifications, education, training and experiences. 
                   It provides me personality and work ethic.
                   </Text>
@@ -238,17 +239,17 @@ const Projects = () => {
                   <Text fontSize="16px">
                   <b>Tech Stack </b> :
                   </Text>
-                  ReactJs,Chakra Ui
+                 <b> ReactJs,Chakra UI</b>
                 </Center>
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a  href="https://github.com/lalitUnstopable/lalitUnstopable.github.io/tree/master">
-                    <Button>Github</Button>
+                    <Button colorScheme='teal' variant='solid'>Github</Button>
                   </a>
                   <a  href="https://lalitunstopable.github.io/">
-                    <Button>Deploy</Button>
+                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -275,8 +276,8 @@ const Projects = () => {
             <Box
                 style={{
                   padding: "20px",
-                  boxShadow:
-                    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
+
                 }}
               >
               <Center>
@@ -295,13 +296,13 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                  <Text>
+                  <Text fontWeight={"medium"}>
                   Todo App project is an application specially built to keep track of tasks that need to be done.
                   This application will be like a task keeper where the user would be able to enter the tasks 
                   that they need to do. Once they are done with their tasks they can also remove them from the list.
                     <br />
                     <br />
-                    <b>Tech Stack </b>: Html,Css,ReactJs
+                    <b>Tech Stack </b>: <b>Html,Css,ReactJs</b>
                   </Text>
                 </Center>
                 <br />
@@ -310,18 +311,17 @@ const Projects = () => {
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a href="https://github.com/lalitUnstopable/Todo-App">
-                    <Button>Github</Button>
+                    <Button colorScheme='teal' variant='solid'>Github</Button>
                   </a>
                   <a href="https://localdata.netlify.app/">
-                    <Button>Deploy</Button>
+                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
               <Box
                 style={{
                   padding: "20px",
-                  boxShadow:
-                    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
                 }}
               >
                  <Center>
@@ -340,13 +340,13 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                  <Text>
+                  <Text fontWeight={"medium"}>
                   Freshly is the leading prepared meal delivery subscription service providing nutritionist-approved, 
                   balanced meals that are delivered fresh to your door and ready-to-eat
                   in three minutes.Freshly delivers effortless nourishment that works for real life.
                     <br />
                     <br />
-                    <b>Tech Stack </b>:Html,Css,JavaScript
+                    <b>Tech Stack </b>:<b>Html,Css,JavaScript</b>
                   </Text>
                 </Center>
                 <br />
@@ -356,18 +356,17 @@ const Projects = () => {
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a href="https://github.com/lalitUnstopable/FreshlyClone/tree/main/Freshly%20Clone">
-                    <Button>Github</Button>
+                    <Button colorScheme='teal' variant='solid'>Github</Button>
                   </a>
                   <a href="https://lucky-longma-b5b6e1.netlify.app/">
-                    <Button>Deploy</Button>
+                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
               <Box
                 style={{
                   padding: "20px",
-                  boxShadow:
-                    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
                 }}
               >
               <Center>
@@ -386,12 +385,12 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                  <Text>
+                  <Text fontWeight={"medium"}>
                   My portfolio is a compilation of materials that exemplifies my beliefs, skills, qualifications, education, training and experiences. 
                   It provides me personality and work ethic.
                     <br />
                     <br />
-                    <b>Tech Stack </b>:ReactJs,Chakra Ui
+                    <b>Tech Stack </b>:<b>ReactJs,Chakra UI</b>
                   </Text>
                 </Center>
                 <br />
@@ -400,10 +399,10 @@ const Projects = () => {
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a href="https://github.com/lalitUnstopable/lalitUnstopable.github.io/tree/master">
-                    <Button>Github</Button>
+                    <Button colorScheme='teal' variant='solid'>Github</Button>
                   </a>
                   <a href="https://lalitunstopable.github.io/">
-                    <Button>Deploy</Button>
+                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -411,8 +410,7 @@ const Projects = () => {
               <Box
                 style={{
                   padding: "20px",
-                  boxShadow:
-                    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
                 }}
               >
                  <Center>
@@ -431,14 +429,14 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                  <Text>
+                  <Text fontWeight={"medium"}>
                   WhiteFeather is an  e-commerce 
                   plateform that sells cosmetics and personal care products. It
                   has given a premium experience of makeup and skincare that has raised questions on general beauty standards and
                    has spread across the movement of positivity and self-confidence.
                     <br />
                     <br />
-                   <b>Tech Stack </b> :Html,Css,JavaScript,Github 
+                   <b>Tech Stack </b> : <b>Html,Css,ReactJs </b>
                     </Text>
                 </Center>
                 <br />
@@ -448,10 +446,10 @@ const Projects = () => {
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a href="https://github.com/KanhaiyaChauhan037/succinct-wrench-1095">
-                    <Button>Github</Button>
+                    <Button colorScheme='teal' variant='solid'>Github</Button>
                   </a>
                   <a href="https://mellifluous-froyo-0d1b1d.netlify.app/">
-                    <Button>Deploy</Button>
+                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>

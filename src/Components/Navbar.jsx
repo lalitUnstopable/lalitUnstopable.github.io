@@ -1,4 +1,4 @@
-import {Text,Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, Flex, HStack, IconButton,Spacer, useColorMode, useDisclosure, VStack } from '@chakra-ui/react';
+import {Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, Flex, HStack, IconButton,Spacer, useColorMode, useDisclosure, VStack } from '@chakra-ui/react';
 import { FaSun, FaMoon } from "react-icons/fa";
 import React, { useRef } from 'react'
 import Style from "./Navbar.module.css";
@@ -17,7 +17,7 @@ const Navbar = () => {
 
     const { colorMode, toggleColorMode } = useColorMode();
 
-    const isDark = colorMode === "dark";
+    const isDark = colorMode === "light";
 
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
@@ -30,7 +30,7 @@ const Navbar = () => {
         zIndex={10}
         position="sticky"
         top="0"
-        bgColor={isDark ? "gray.800" : "white"}
+        bgColor={isDark ? "white" : "gray.800"}
         borderBottom="1px"
         borderColor="gray.100"
         h="60px" 
