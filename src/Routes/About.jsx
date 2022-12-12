@@ -4,6 +4,15 @@ import prof from "../Assets/LalitProfile.JPG";
 import GitHubCalendar from 'react-github-calendar';
 
 const About = () => {
+  const colourTheme = {
+    background: "transparent",
+    text: "#ffffff",
+    level4: "#125425",
+    level3: "#228f41",
+    level2: "#31a851",
+    level1: "#66cc78",
+    level0: "#d6d6d6"
+  };
   return (
     <>
         <Box  mt="20px" 
@@ -42,15 +51,8 @@ const About = () => {
         </Box>
     </Box>
     </Box>
-    <hr style={{height:"10px",backgroundColor:"gray",marginTop:"100px"}}/>
-    <Text textAlign="center" lineHeight={"2.5"} fontSize={["20px","30px","30px","50px"]} fontWeight={"bold"} ml="20px" mt="50px" >
-    My Github Calender</Text>
-    <Center mt="30px" 
-              boxShadow= "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" p="15px"
-               >
-        <GitHubCalendar username="lalitUnstopable" />
-    </Center><br /><br />
-         <HStack p={2} justify="center" data-aos="fade-up" mb="20px">
+
+    <HStack p={2} justify="center" data-aos="fade-up" mb="20px" mt="30px">
           <SimpleGrid columns={[1, 1, 2, 2]} spacing={5} 
               boxShadow= "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" p="15px"
               >
@@ -163,6 +165,17 @@ const About = () => {
             </HStack>
             </SimpleGrid>
         </HStack>
+
+        <hr style={{height:"10px",backgroundColor:"gray",marginTop:"50px"}}/>
+    
+    <Text textAlign="center" lineHeight={"2.5"} fontSize={["20px","30px","30px","50px"]} fontWeight={"bold"} ml="20px" mt="30px" >
+    My Github Calender</Text>
+    <Center mt="30px" 
+              boxShadow= "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" p="15px"
+               >
+        <GitHubCalendar username="lalitUnstopable" year={new Date().getFullYear()}/>
+    </Center><br /><br />
+       
         <Text textAlign="center" lineHeight={"2.5"} fontSize={["20px","30px","30px","50px"]} fontWeight={"bold"} ml="20px" mt="30px" mb="20px">My Github Stats</Text>
         <div style={{width:"100%",margin:"auto",marginBottom:"20px",display:"flex",flexDirection:"column",gap:"10px"}}
          >
@@ -175,11 +188,7 @@ const About = () => {
         <Image 
               boxShadow= "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" p="15px"
               align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lalitUnstopable&theme=react&hide_border=false&include_all_commits=true&layout=compact" alt="" w={["90%","90%","90%","50%"]} m="auto"/> 
-        <Image 
-              boxShadow= "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" p="15px"
-              align="center" src="https://activity-graph.herokuapp.com/graph?username=lalitUnstopable&theme=react-dark&hide_border=true" alt="" w={["90%","90%","90%","50%"]} m="auto"/> 
-
-        </div>
+       </div>
     </>
   )
 }
