@@ -1,31 +1,43 @@
-import {Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, Flex, HStack, IconButton,Spacer, useColorMode, useDisclosure, VStack } from '@chakra-ui/react';
+import {
+  Button,
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerOverlay,
+  Flex,
+  HStack,
+  IconButton,
+  Input,
+  ListItem,
+  Spacer,
+  Text,
+  UnorderedList,
+  useColorMode,
+  useDisclosure,
+  VStack,
+  
+} from "@chakra-ui/react";
+
+import pdf from "../Assets/Lalit Pawar-Resume.pdf";
 import { FaSun, FaMoon } from "react-icons/fa";
-import React, { useRef } from 'react'
 import Style from "./Navbar.module.css";
-import { Link } from "react-router-dom";
+import { useRef } from "react";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { Link } from "react-router-dom";
 
-let links = [
-    {"path":"/", title:"Home"},
-    {"path":"/about", title:"About"},
-    {"path":"/skills", title:"Skills"},
-    {"path":"/projects", title:"Projects"},
-    {"path":"/contact", title:"Contact"}
-]
 
-const Navbar = () => {
+function Navbar() {
+  const { colorMode, toggleColorMode } = useColorMode();
 
-    const { colorMode, toggleColorMode } = useColorMode();
+  const isDark = colorMode === "dark";
 
-    const isDark = colorMode === "dark";
-
-    const { isOpen, onOpen, onClose } = useDisclosure();
-    const btnRef = useRef();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = useRef();
 
   return (
- 
     <>
-   <HStack 
+      <HStack
         display={["none", "none", "none", "flex"]}
         zIndex={10}
         position="sticky"
@@ -33,35 +45,86 @@ const Navbar = () => {
         bgColor={isDark ? "gray.800" : "white"}
         borderBottom="1px"
         borderColor="gray.100"
-        h="60px" 
-    >
-    <Spacer />
-    <Flex justifyContent={"space-evenly"} gap="40px" >
-    
-      { 
-        links.map((link)=>{
-            return (
-                <Link style={{fontSize:"25px",textDecoration:"none",position: "relative"}} 
-                  className={({isActive}) => {
-                    return isActive ? Style.active : Style.default;
-                  }}
-                  key = {link.path}
-                  to={link.path}
-                  
-                >{link.title}
-                 </Link>
-            )
-        })
-     }
-                    <IconButton mr="10px"
-                    isRound={true}
-                    icon={isDark ? <FaMoon /> : <FaSun />}
-                    onClick={toggleColorMode}
-                    />
-     </Flex>
-    </HStack>
+        h="60px"
+      >
+        {/* <Social /> */}
+        <Spacer />
 
-     <HStack
+        <Flex px="20px" align="center">
+          <HStack
+            w="55vw"
+            display="flex"
+            justifyContent="space-evenly"
+            fontWeight="semibold"
+            letterSpacing="3px"
+            fontSize={"25px"}
+           >
+            <Link
+              to="/"
+              
+            >
+              HOME
+            </Link>
+            <Link
+              to="/about"
+              smooth={true}
+              duration={0}
+              spy={true}
+              offset={-80}
+              
+            >
+              ABOUT
+            </Link>
+
+            <Link
+              to="/projects"
+              smooth={true}
+              duration={0}
+              spy={true}
+              offset={-40}
+             
+            >
+              PROJECTS
+            </Link>
+
+
+            <Link
+              to="/skills"
+              smooth={true}
+              duration={0}
+              spy={true}
+              offset={-40}
+              
+            >
+              SKILLS
+            </Link>
+           
+            <Link
+              to="/contact"
+              smooth={true}
+              duration={0}
+              spy={true}
+              offset={-80}
+             
+            >
+              CONTACT
+            </Link>
+            <a href={pdf} download>
+                        <Button >
+                          RESUME
+                        </Button>
+                      </a>
+          </HStack>
+          <IconButton
+            ml="10px"
+            isRound
+            icon={isDark ? <FaSun /> : <FaMoon />}
+            onClick={toggleColorMode}
+          />
+        </Flex>
+      </HStack>
+
+      <HStack
         px="10px"
         h="60px" 
         alignItems={"center"}
@@ -118,12 +181,17 @@ const Navbar = () => {
               <Link to="contact">
                 CONTACT
               </Link>
+              <a href={pdf} download>
+                        <Button colorScheme="red" style={{ marginTop: "20px" }}>
+                          RESUME
+                        </Button>
+                      </a>
             </VStack>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      </>   
-  )
+    </>
+  );
 }
 
-export default Navbar
+export default Navbar;

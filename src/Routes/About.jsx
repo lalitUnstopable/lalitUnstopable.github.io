@@ -16,7 +16,6 @@ const About = () => {
   return (
     <>
         <Box  mt="20px" 
-        // boxShadow = "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
         >
         <Text textAlign="center" lineHeight={"2.5"} fontSize="5xl" fontWeight={"bold"} ml="20px" mt="-10px" >My Profile</Text>
 

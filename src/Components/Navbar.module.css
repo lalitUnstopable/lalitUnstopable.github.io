@@ -3,9 +3,10 @@
     color:black ;
     font-size: 25px;
     
+    
 }
 
-.default{
+ .default{
     text-decoration: none;
     color:#707B7C  ;
     font-size: 25px;
@@ -55,4 +56,5 @@ a:hover::before{
 
 
 
+ 
 

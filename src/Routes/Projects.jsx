@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import WhiteFeather from "../Assets/WhiteFeather.jpeg";
-import lalitPortfolio from "../Assets/lalitPortfolio.jpeg";
+import lalitPortfolio from "../Assets/lalitPortfolio.png";
 import freshly from "../Assets/Freshly.jpeg";
 import Todo from "../Assets/TodoApp.jpeg";
 
@@ -44,7 +44,7 @@ const Projects = () => {
                 size="3xl"
                 noOfLines={1}
                 padding="20px"
-              
+                
               >
                 My Projects
               </Heading>
@@ -53,7 +53,7 @@ const Projects = () => {
             <br />
             <br />
 
-            <SimpleGrid minChildWidth="200px" spacing="70px" mb="20px">
+            <SimpleGrid minChildWidth="400px" spacing="70px" mb="20px">
               
             <Box
                 style={{
@@ -61,10 +61,14 @@ const Projects = () => {
                   boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
                 }}
               >
+               <Center>
+                  <Heading>Todo App</Heading>
+                </Center>
+                <br />
                 <Center >
                   {" "}
                   <Image
-                    boxSize="200px"
+                    boxSize="300px"
                     width="100%"
                     borderRadius="20px"
                     src={Todo}
@@ -72,10 +76,7 @@ const Projects = () => {
                   />
                 </Center>
                 <br />
-                <Center>
-                  <Heading>Todo App</Heading>
-                </Center>
-                <br />
+               
                 <Center>
                   <Text fontWeight={"medium"}>
                   Todo App project is an application specially built to keep track of tasks that need to be done.
@@ -84,22 +85,20 @@ const Projects = () => {
                  </Text>
                 </Center>
                 <br />
-                <Center>
-                <Text fontSize="16px">
+                <Center >
+               
 
-                  <b>Tech Stack </b> :
-                  </Text>
-                 <b> Html,Css,ReactJs</b>
+                <Text as="b" fontSize={"30px"}>TECH STACK </Text> <Text as="b" fontSize={"30px"}>&nbsp;:&nbsp;</Text> <Text as="b" color={"grey"} fontSize={"30px"}>ReactJs,Chakra UI</Text>
                 </Center>
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a  href="https://github.com/lalitUnstopable/Todo-App">
-                    <Button colorScheme='teal' variant='solid'>Github</Button>
+                    <Button bg="black" color="white" variant='solid'>Github</Button>
                   </a>
                   <a  href="https://localdata.netlify.app/">
-                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
+                    <Button bg="black" color="white" variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -112,10 +111,14 @@ const Projects = () => {
                     // "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
                 }}
               >
+              <Center>
+                  <Heading>Freshly Clone</Heading>
+                </Center>
+                <br />
                 <Center>
                   {" "}
                   <Image
-                    boxSize="200px"
+                    boxSize="300px"
                     width="100%"
                     borderRadius="20px"
                     src={freshly}
@@ -123,10 +126,7 @@ const Projects = () => {
                   />
                 </Center>
                 <br />
-                <Center>
-                  <Heading>Freshly Clone</Heading>
-                </Center>
-                <br />
+                
                 <Center>
                   <Text fontWeight={"medium"}>
                   Freshly is the leading prepared meal delivery subscription service providing nutritionist-approved, 
@@ -136,21 +136,18 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                <Text fontSize="16px">
+                <Text as="b" fontSize={"30px"}>TECH STACK </Text> <Text as="b" fontSize={"30px"}>&nbsp;:&nbsp;</Text> <Text as="b" color={"grey"} fontSize={"30px"}>Html,Css,JavaScript</Text>
 
-                  <b>Tech Stack </b> :
-                  </Text>
-                 <b> Html,Css,Js</b>
                 </Center>
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a  href="https://github.com/lalitUnstopable/FreshlyClone/tree/main/Freshly%20Clone">
-                    <Button colorScheme='teal' variant='solid'>Github</Button>
+                    <Button bg="black" color="white" variant='solid'>Github</Button>
                   </a>
                   <a  href="https://lucky-longma-b5b6e1.netlify.app/">
-                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
+                    <Button bg="black" color="white" variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -162,20 +159,22 @@ const Projects = () => {
 
                 }}
               >
+               <Center>
+                  <Heading>WhiteFeather</Heading>
+                </Center>
                 <Center>
                   {" "}
                   <Image
-                    boxSize="200px"
+                    boxSize="300px"
                     width="100%"
                     borderRadius="20px"
                     src={WhiteFeather}
                     alt="Dan Abramov"
+                    mt="20px"
                   />
                 </Center>
                 <br />
-                <Center>
-                  <Heading>WhiteFeather</Heading>
-                </Center>
+               
                 <br />
                 <Center>
                   <Text fontWeight={"medium"}>
@@ -187,22 +186,17 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                <Text fontSize="16px">
-
-                  <b>Tech Stack </b> : 
-                  </Text> 
-                <b>ReactJs,ChakraUI</b>
-                
+                <Text as="b" fontSize={"30px"}>TECH STACK </Text> <Text as="b" fontSize={"30px"}>&nbsp;:&nbsp;</Text> <Text as="b" color={"grey"} fontSize={"30px"}>ReactJs,Chakra UI</Text>
                 </Center>
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a  href="https://github.com/KanhaiyaChauhan037/succinct-wrench-1095">
-                    <Button colorScheme='teal' variant='solid'>Github</Button>
+                    <Button bg="black" color="white" variant='solid'>Github</Button>
                   </a>
-                  <a href="https://mellifluous-froyo-0d1b1d.netlify.app/">
-                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
+                  <a href="https://whitefeather.netlify.app/">
+                    <Button bg="black" color="white" variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -212,10 +206,14 @@ const Projects = () => {
                   padding: "20px",
                   boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" }}
                   >
+                   <Center>
+                  <Heading>My Portfolio</Heading>
+                </Center>
+                <br />
                 <Center>
                   {" "}
                   <Image
-                    boxSize="200px"
+                    boxSize="300px"
                     width="100%"
                     borderRadius="20px"
                     src={lalitPortfolio}
@@ -223,10 +221,7 @@ const Projects = () => {
                   />
                 </Center>
                 <br />
-                <Center>
-                  <Heading>My Portfolio</Heading>
-                </Center>
-                <br />
+               
                 <Center>
                   <Text fontWeight={"medium"}>
                   My portfolio is a compilation of materials that exemplifies my beliefs, skills, qualifications, education, training and experiences. 
@@ -235,20 +230,18 @@ const Projects = () => {
                 </Center>
                 <br />
                 <Center>
-                  <Text fontSize="16px">
-                  <b>Tech Stack </b> :
-                  </Text>
-                 <b> ReactJs,Chakra UI</b>
+                <Text as="b" fontSize={"30px"}>TECH STACK </Text> <Text as="b" fontSize={"30px"}>&nbsp;:&nbsp;</Text> <Text as="b" color={"grey"} fontSize={"30px"}>ReactJs,Chakra UI</Text>
+
                 </Center>
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a  href="https://github.com/lalitUnstopable/lalitUnstopable.github.io/tree/master">
-                    <Button colorScheme='teal' variant='solid'>Github</Button>
+                    <Button bg="black" color="white" variant='solid'>Github</Button>
                   </a>
                   <a  href="https://lalitunstopable.github.io/">
-                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
+                    <Button bg="black" color="white" variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -279,10 +272,14 @@ const Projects = () => {
 
                 }}
               >
+               <Center>
+                  <Heading>Todo App</Heading>
+                </Center>
+                <br />
               <Center>
                   {" "}
                   <Image
-                    boxSize="200px"
+                    boxSize="300px"
                     width="100%"
                     borderRadius="20px"
                     src={Todo}
@@ -290,18 +287,15 @@ const Projects = () => {
                   />
                 </Center>
                 <br />
-                <Center>
-                  <Heading>Todo App</Heading>
-                </Center>
-                <br />
-                <Center>
+               
+                <Center textAlign={"center"}>
                   <Text fontWeight={"medium"}>
                   Todo App project is an application specially built to keep track of tasks that need to be done.
                   This application will be like a task keeper where the user would be able to enter the tasks 
                   that they need to do. Once they are done with their tasks they can also remove them from the list.
                     <br />
                     <br />
-                    <b>Tech Stack </b>: <b>Html,Css,ReactJs</b>
+                    <b>TECH STACK</b>&nbsp;:&nbsp;<b>Html,Css,ReactJs</b>
                   </Text>
                 </Center>
                 <br />
@@ -310,10 +304,10 @@ const Projects = () => {
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a href="https://github.com/lalitUnstopable/Todo-App">
-                    <Button colorScheme='teal' variant='solid'>Github</Button>
+                    <Button bg="black" color="white" variant='solid'>Github</Button>
                   </a>
                   <a href="https://localdata.netlify.app/">
-                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
+                    <Button bg="black" color="white" variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -323,10 +317,14 @@ const Projects = () => {
                   boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
                 }}
               >
+               <Center>
+                  <Heading>Freshly Clone</Heading>
+                </Center>
+                <br />
                  <Center>
                   {" "}
                   <Image
-                    boxSize="200px"
+                    boxSize="300px"
                     width="100%"
                     borderRadius="20px"
                     src={freshly}
@@ -334,18 +332,15 @@ const Projects = () => {
                   />
                 </Center>
                 <br />
-                <Center>
-                  <Heading>Freshly Clone</Heading>
-                </Center>
-                <br />
-                <Center>
+               
+                <Center textAlign={"center"}>
                   <Text fontWeight={"medium"}>
                   Freshly is the leading prepared meal delivery subscription service providing nutritionist-approved, 
                   balanced meals that are delivered fresh to your door and ready-to-eat
                   in three minutes.Freshly delivers effortless nourishment that works for real life.
                     <br />
                     <br />
-                    <b>Tech Stack </b>:<b>Html,Css,JavaScript</b>
+                    <b>TECH STACK </b>&nbsp;:&nbsp;<b>Html,Css,JavaScript</b>
                   </Text>
                 </Center>
                 <br />
@@ -355,10 +350,10 @@ const Projects = () => {
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a href="https://github.com/lalitUnstopable/FreshlyClone/tree/main/Freshly%20Clone">
-                    <Button colorScheme='teal' variant='solid'>Github</Button>
+                    <Button bg="black" color="white" variant='solid'>Github</Button>
                   </a>
                   <a href="https://lucky-longma-b5b6e1.netlify.app/">
-                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
+                    <Button bg="black" color="white" variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -368,10 +363,14 @@ const Projects = () => {
                   boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
                 }}
               >
+               <Center>
+                  <Heading>My Portfolio</Heading>
+                </Center>
+                <br />
               <Center>
                   {" "}
                   <Image
-                    boxSize="200px"
+                    boxSize="300px"
                     width="100%"
                     borderRadius="20px"
                     src={lalitPortfolio}
@@ -379,17 +378,14 @@ const Projects = () => {
                   />
                 </Center>
                 <br />
-                <Center>
-                  <Heading>My Portfolio</Heading>
-                </Center>
-                <br />
-                <Center>
+               
+                <Center textAlign={"center"}>
                   <Text fontWeight={"medium"}>
                   My portfolio is a compilation of materials that exemplifies my beliefs, skills, qualifications, education, training and experiences. 
                   It provides me personality and work ethic.
                     <br />
                     <br />
-                    <b>Tech Stack </b>:<b>ReactJs,Chakra UI</b>
+                    <b>TECH STACK </b>&nbsp;:&nbsp;<b>ReactJs,Chakra UI</b>
                   </Text>
                 </Center>
                 <br />
@@ -398,10 +394,10 @@ const Projects = () => {
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a href="https://github.com/lalitUnstopable/lalitUnstopable.github.io/tree/master">
-                    <Button colorScheme='teal' variant='solid'>Github</Button>
+                    <Button bg="black" color="white" variant='solid'>Github</Button>
                   </a>
                   <a href="https://lalitunstopable.github.io/">
-                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
+                    <Button bg="black" color="white" variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
@@ -412,10 +408,14 @@ const Projects = () => {
                   boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
                 }}
               >
+               <Center>
+                  <Heading>WhiteFeather</Heading>
+                </Center>
+                <br />
                  <Center>
                   {" "}
                   <Image
-                    boxSize="200px"
+                    boxSize="300px"
                     width="100%"
                     borderRadius="20px"
                     src={WhiteFeather}
@@ -423,11 +423,8 @@ const Projects = () => {
                   />
                 </Center>
                 <br />
-                <Center>
-                  <Heading>WhiteFeather</Heading>
-                </Center>
-                <br />
-                <Center>
+               
+                <Center textAlign={"center"}>
                   <Text fontWeight={"medium"}>
                   WhiteFeather is an  e-commerce 
                   plateform that sells cosmetics and personal care products. It
@@ -435,7 +432,7 @@ const Projects = () => {
                    has spread across the movement of positivity and self-confidence.
                     <br />
                     <br />
-                   <b>Tech Stack </b> : <b>Html,Css,ReactJs </b>
+                    <b>TECH STACK </b>&nbsp;:&nbsp;<b>Html,Css,ReactJs</b>
                     </Text>
                 </Center>
                 <br />
@@ -445,10 +442,10 @@ const Projects = () => {
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
                   <a href="https://github.com/KanhaiyaChauhan037/succinct-wrench-1095">
-                    <Button colorScheme='teal' variant='solid'>Github</Button>
+                    <Button bg="black" color="white" variant='solid'>Github</Button>
                   </a>
-                  <a href="https://mellifluous-froyo-0d1b1d.netlify.app/">
-                    <Button colorScheme='teal' variant='solid'>Deploy</Button>
+                  <a href="https://whitefeather.netlify.app/">
+                    <Button bg="black" color="white" variant='solid'>Deploy</Button>
                   </a>
                 </div>
               </Box>
