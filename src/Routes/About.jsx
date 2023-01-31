@@ -1,4 +1,4 @@
-import { Box,Center,HStack,Image,Img, ListItem, SimpleGrid, Text, UnorderedList } from '@chakra-ui/react'
+import { Box,Center,Heading,HStack,Image,Img, ListItem, SimpleGrid, Text, UnorderedList } from '@chakra-ui/react'
 import React from 'react';
 import prof from "../Assets/LalitProfile.JPG";
 import GitHubCalendar from 'react-github-calendar';
@@ -15,9 +15,9 @@ const About = () => {
   };
   return (
     <>
-        <Box  mt="20px" 
+        <Box  mt="20px" id="about"
         >
-        <Text textAlign="center" lineHeight={"2.5"} fontSize="5xl" fontWeight={"bold"} ml="20px" mt="-10px" >My Profile</Text>
+        <Heading textAlign="center" lineHeight={"2.5"} fontSize="6xl" fontWeight={"bold"} ml="20px" mt="-40px" >My Profile</Heading>
 
         <Box  display={"flex"} flexDirection={["column","column","column","row"]} 
          justifyContent={"space-evenly"}  alignItems={"center"} w="100%" m="auto">
@@ -167,15 +167,15 @@ const About = () => {
 
         <hr style={{height:"10px",backgroundColor:"gray",marginTop:"50px"}}/>
     
-    <Text textAlign="center" lineHeight={"2.5"} fontSize={["20px","30px","30px","50px"]} fontWeight={"bold"} ml="20px" mt="30px" >
-    My Github Calender</Text>
+    <Heading textAlign="center" lineHeight={"2.5"} fontSize={["20px","30px","30px","50px"]} fontWeight={"bold"} ml="20px" mt="30px" >
+    My Github Calender</Heading>
     <Center mt="30px" 
               boxShadow= "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" p="15px"
                >
         <GitHubCalendar username="lalitUnstopable" year={new Date().getFullYear()}/>
     </Center><br /><br />
        
-        <Text textAlign="center" lineHeight={"2.5"} fontSize={["20px","30px","30px","50px"]} fontWeight={"bold"} ml="20px" mt="30px" mb="20px">My Github Stats</Text>
+        <Heading textAlign="center" lineHeight={"2.5"} fontSize={["20px","30px","30px","50px"]} fontWeight={"bold"} ml="20px" mt="30px" mb="20px">My Github Stats</Heading>
         <div style={{width:"100%",margin:"auto",marginBottom:"20px",display:"flex",flexDirection:"column",gap:"10px"}}
          >
         <Image 

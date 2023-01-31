@@ -95,8 +95,8 @@ const Skills = () => {
           >
             <Center>
               <Heading
-                as="h1"
-                size="4xl"
+               
+                size="3xl"
                 noOfLines={1}
                 style={{ marginTop: "90px", padding: "20px", }}
               >

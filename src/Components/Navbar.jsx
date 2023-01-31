@@ -4,6 +4,8 @@ import {
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
   DrawerOverlay,
   Flex,
   HStack,
@@ -16,16 +18,14 @@ import {
   useColorMode,
   useDisclosure,
   VStack,
-  
 } from "@chakra-ui/react";
 
-import pdf from "../Assets/Lalit Pawar-Resume.pdf";
+import pdf from "../Assets/Lalit-Pawar-Resume.pdf";
 import { FaSun, FaMoon } from "react-icons/fa";
-import Style from "./Navbar.module.css";
+import styles from "./Navbar.module.css";
+import { Link } from "react-scroll";
 import { useRef } from "react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { Link } from "react-router-dom";
-
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -52,60 +52,63 @@ function Navbar() {
 
         <Flex px="20px" align="center">
           <HStack
-            w="55vw"
+            w="50vw"
             display="flex"
             justifyContent="space-evenly"
             fontWeight="semibold"
             letterSpacing="3px"
-            fontSize={"25px"}
-           >
+          >
             <Link
-              to="/"
-              
+              to="home"
+              smooth={true}
+               duration={0}
+              spy={true}
+              offset={-120}
+              activeClass={styles.active}
             >
               HOME
             </Link>
             <Link
-              to="/about"
+              to="about"
               smooth={true}
               duration={0}
               spy={true}
               offset={-80}
-              
+              activeClass={styles.active}
             >
               ABOUT
             </Link>
 
             <Link
-              to="/projects"
+              to="project"
               smooth={true}
               duration={0}
               spy={true}
               offset={-40}
-             
+              activeClass={styles.active}
             >
               PROJECTS
             </Link>
 
 
             <Link
-              to="/skills"
+              to="skills"
               smooth={true}
               duration={0}
               spy={true}
               offset={-40}
-              
+              activeClass={styles.active}
             >
               SKILLS
             </Link>
            
             <Link
-              to="/contact"
+              to="contact"
               smooth={true}
               duration={0}
               spy={true}
               offset={-80}
-             
+              activeClass={styles.active}
             >
               CONTACT
             </Link>
@@ -126,15 +129,11 @@ function Navbar() {
 
       <HStack
         px="10px"
-        h="60px" 
-        alignItems={"center"}
+        borderBottom="1px"
+        borderColor="gray.100"
         display={["flex", "flex", "flex", "none"]}
-        zIndex={10}
-        position="sticky"
-        top="0"
-        left="0"
-         overflow="visible"
-        >
+      
+      >
         <IconButton
           aria-label="Open Menu"
           mr={2}
@@ -147,7 +146,7 @@ function Navbar() {
         <Spacer />
         {/* <Social /> */}
         <IconButton
-          ml="-50px"
+          ml="10px"
           isRound
           icon={isDark ? <FaSun /> : <FaMoon />}
           onClick={toggleColorMode}
@@ -160,25 +159,64 @@ function Navbar() {
         placement="right"
         onClose={onClose}
         finalFocusRef={btnRef}
-       >
+       
+    
+      >
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-           <DrawerBody>
+
+          <DrawerHeader></DrawerHeader>
+
+          <DrawerBody>
             <VStack align="left" spacing={5}>
-              <Link to="/">
+              <Link
+                to="home"
+                smooth={true}
+                duration={0}
+                spy={true}
+                activeClass={styles.active}
+              >
                 HOME
               </Link>
-              <Link to="/about">
+              <Link
+                to="about"
+                smooth={true}
+                duration={0}
+                spy={true}
+                 offset={50}
+                activeClass={styles.active}
+              >
                 ABOUT
               </Link>
-              <Link to="/skills">
+              <Link
+                to="skills"
+                smooth={true}
+                duration={0}
+                spy={true}
+                 offset={50}
+                activeClass={styles.active}
+              >
                 SKILLS
               </Link>
-              <Link to="/projects">
+              <Link
+                to="project"
+                smooth={true}
+                duration={0}
+                spy={true}
+                // offset={50}
+                activeClass={styles.active}
+              >
                 PROJECTS
               </Link>
-              <Link to="contact">
+              <Link
+                to="contact"
+                smooth={true}
+                duration={0}
+                spy={true}
+                // offset={50}
+                activeClass={styles.active}
+              >
                 CONTACT
               </Link>
               <a href={pdf} download>
@@ -195,3 +233,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+

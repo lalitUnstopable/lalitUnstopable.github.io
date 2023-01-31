@@ -253,11 +253,8 @@ const Projects = () => {
           <div style={{ width: "90%", margin: "auto" }} id="project">
             <Center>
               <Heading
-                as="h1"
-                size="2xl"
-                noOfLines={1}
-                // style={{ marginTop: "320px" }}
-              >
+                size="1.5xl"
+                noOfLines={1}>
                 My <span >Projects</span>
               </Heading>
             </Center>

@@ -1,6 +1,6 @@
 .active{
     text-decoration: none;
-    color:black ;
+    color:rgb(176, 44, 176) ;
     font-size: 25px;
     
     
@@ -37,6 +37,7 @@ a:before{
   display: block;
   position: absolute;
   bottom: -3px;
+
   left: 0;
   width: 0;
   height: 3px;
@@ -55,6 +56,13 @@ a:hover::before{
 }
 
 
-
  
-
+/*  
+ .active {
+  color: rgb(176, 44, 176);
+  text-decoration: none;
+  
+} */
+a{
+  cursor: pointer;
+} 
