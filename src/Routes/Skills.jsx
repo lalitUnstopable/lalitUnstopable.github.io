@@ -95,7 +95,6 @@ const Skills = () => {
           >
             <Center>
               <Heading
-               
                 size="3xl"
                 noOfLines={1}
                 style={{ marginTop: "90px", padding: "20px", }}
@@ -170,6 +169,4 @@ const Skills = () => {
 };
     
   
-
-
 export default Skills

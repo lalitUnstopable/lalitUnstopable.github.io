@@ -14,9 +14,9 @@ const About = () => {
     level0: "#d6d6d6"
   };
   return (
-    <>
-        <Box  mt="20px" id="about"
-        >
+   
+    <Box id="about">
+        <Box  mt="20px" >
         <Heading textAlign="center" lineHeight={"2.5"} fontSize="6xl" fontWeight={"bold"} ml="20px" mt="-40px" >My Profile</Heading>
 
         <Box  display={"flex"} flexDirection={["column","column","column","row"]} 
@@ -188,7 +188,7 @@ const About = () => {
               boxShadow= "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" p="15px"
               align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lalitUnstopable&theme=react&hide_border=false&include_all_commits=true&layout=compact" alt="" w={["90%","90%","90%","50%"]} m="auto"/> 
        </div>
-    </>
+       </Box>
   )
 }
 

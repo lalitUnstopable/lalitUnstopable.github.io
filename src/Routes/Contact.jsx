@@ -32,7 +32,7 @@ const Contact = () => {
   });
 
   return (
-    <div>
+    <div id="contact">
       {isDesktop ? (
         <div
           style={{
@@ -41,21 +41,16 @@ const Contact = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-          }}
-        >
-          <div id="contact">
+          }}>
+          <div >
             <Center>
-              
-              <Heading  size="3xl" mt="30px" color= "black">My Contact</Heading>
+              <Heading  size="3xl" mt="30px">My Contact</Heading>
             </Center>
             <br />
-
             <br />
-
             <Wrap spacing="20px" justify="center">
               <WrapItem>
                 <Center>
-                 
                  <Box >
                <Center>  <Heading padding="25px">Lalit Pawar</Heading></Center>
                   <Center><Heading >9766922240</Heading></Center>
@@ -159,9 +154,7 @@ const Contact = () => {
               </Heading>
             </Center>
             <br />
-
-            <br />
-
+            <br /> 
             <Wrap spacing="50px" justify="center">
               <WrapItem>
                 <Center>

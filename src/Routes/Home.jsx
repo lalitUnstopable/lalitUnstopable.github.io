@@ -59,7 +59,7 @@ const About = () => {
                       />
                       <br />
                       <a href={pdf} download>
-                        <Button colorScheme="purple" style={{ marginTop: "20px" }}>
+                        <Button style={{ marginTop: "20px" }}>
                           RESUME
                         </Button>
                       </a>

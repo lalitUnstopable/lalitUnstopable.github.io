@@ -144,13 +144,11 @@ function Navbar() {
          
         />
         <Spacer />
-        {/* <Social /> */}
         <IconButton
           ml="10px"
           isRound
           icon={isDark ? <FaSun /> : <FaMoon />}
-          onClick={toggleColorMode}
-        />
+          onClick={toggleColorMode}/>
       </HStack>
 
       <Drawer
@@ -158,10 +156,7 @@ function Navbar() {
         isOpen={isOpen}
         placement="right"
         onClose={onClose}
-        finalFocusRef={btnRef}
-       
-    
-      >
+        finalFocusRef={btnRef}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />

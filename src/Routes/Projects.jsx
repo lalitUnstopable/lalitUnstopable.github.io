@@ -160,7 +160,7 @@ const Projects = () => {
                 }}
               >
                <Center>
-                  <Heading>WhiteFeather</Heading>
+                  <Heading>Myglamm Clone</Heading>
                 </Center>
                 <Center>
                   {" "}
@@ -178,7 +178,7 @@ const Projects = () => {
                 <br />
                 <Center>
                   <Text fontWeight={"medium"}>
-                  WhiteFeather is an  e-commerce 
+                  Myglamm is an  e-commerce 
                   plateform that sells cosmetics and personal care products. It
                   has given a premium experience of makeup and skincare that has raised questions on general beauty standards and
                    has spread across the movement of positivity and self-confidence.
@@ -406,7 +406,7 @@ const Projects = () => {
                 }}
               >
                <Center>
-                  <Heading>WhiteFeather</Heading>
+                  <Heading>Myglamm Clone</Heading>
                 </Center>
                 <br />
                  <Center>
@@ -423,7 +423,7 @@ const Projects = () => {
                
                 <Center textAlign={"center"}>
                   <Text fontWeight={"medium"}>
-                  WhiteFeather is an  e-commerce 
+                  Myglamm is an  e-commerce 
                   plateform that sells cosmetics and personal care products. It
                   has given a premium experience of makeup and skincare that has raised questions on general beauty standards and
                    has spread across the movement of positivity and self-confidence.
