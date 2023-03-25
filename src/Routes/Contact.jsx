@@ -159,7 +159,7 @@ const Contact = () => {
               <Text fontWeight={"bold"} fontSize="35px">9766922240</Text>
               <Text fontWeight={"bold"} fontSize="35px">lalitpawar229@gmail.com</Text>
             </Box>
-            <Box width="800px" padding={"25px"} display={"flex"} flexDirection="column" gap="15px" justifyContent="space-between">
+            <Box width="100%" padding={"25px"} display={"flex"} flexDirection="column" gap="15px" justifyContent="space-between">
                 
                 <Button  onClick={()=>
                       window.open(
