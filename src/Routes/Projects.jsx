@@ -12,7 +12,8 @@ import {
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import WhiteFeather from "../Assets/WhiteFeather.jpeg";
-import lalitPortfolio from "../Assets/lalitPortfolio.png";
+import JCrew from "../Assets/JCrew.jpeg";
+import lalitPortfolio from "../Assets/lalitPortfolio.jpg";
 import freshly from "../Assets/Freshly.jpeg";
 import Todo from "../Assets/TodoApp.jpeg";
 
@@ -204,6 +205,52 @@ const Projects = () => {
               <Box
                 style={{
                   padding: "20px",
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
+
+                }}
+              >
+               <Center>
+                  <Heading>J-Crew Clone</Heading>
+                </Center>
+                <Center>
+                  {" "}
+                  <Image
+                    boxSize="300px"
+                    width="100%"
+                    borderRadius="20px"
+                    src={JCrew}
+                    alt="Dan Abramov"
+                    mt="20px"
+                  />
+                </Center>
+                <br />
+               
+                <br />
+                <Center>
+                  <Text fontWeight={"medium"}>
+                  J-Crew is a cloth purchase product website
+                  </Text>
+                </Center>
+                <br />
+                <Center>
+                <Text as="b" fontSize={"30px"}>TECH STACK </Text> <Text as="b" fontSize={"30px"}>&nbsp;:&nbsp;</Text> <Text as="b" color={"grey"} fontSize={"30px"}>Html,Css,JavaScript</Text>
+                </Center>
+                <br />
+                <div
+                  style={{ display: "flex", justifyContent: "space-around" }}
+                >
+                  <a  href="https://github.com/shivamgupta8482/jcrewteam">
+                    <Button bg="black" color="white" variant='solid'>Github</Button>
+                  </a>
+                  <a href="https://bejewelled-klepon-a99de5.netlify.app/">
+                    <Button bg="black" color="white" variant='solid'>Deploy</Button>
+                  </a>
+                </div>
+              </Box>
+
+              <Box
+                style={{
+                  padding: "20px",
                   boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" }}
                   >
                    <Center>
@@ -253,9 +300,10 @@ const Projects = () => {
           <div style={{ width: "90%", margin: "auto" }} id="project">
             <Center>
               <Heading
-                size="1.5xl"
-                noOfLines={1}>
-                My <span >Projects</span>
+                mt={"10px"}
+                size="3xl"
+                >
+                My Projects
               </Heading>
             </Center>
 
@@ -264,6 +312,7 @@ const Projects = () => {
             <SimpleGrid minChildWidth="200px" spacing="80px" mb="30px">
             <Box
                 style={{
+                  mt:"10px",
                   padding: "20px",
                   boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
 
@@ -350,6 +399,50 @@ const Projects = () => {
                     <Button bg="black" color="white" variant='solid'>Github</Button>
                   </a>
                   <a href="https://lucky-longma-b5b6e1.netlify.app/">
+                    <Button bg="black" color="white" variant='solid'>Deploy</Button>
+                  </a>
+                </div>
+              </Box>
+              <Box
+                style={{
+                  padding: "20px",
+                  boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
+
+                }}
+              >
+               <Center>
+                  <Heading>J-Crew Clone</Heading>
+                </Center>
+                <br />
+              <Center>
+                  {" "}
+                  <Image
+                    boxSize="300px"
+                    width="100%"
+                    borderRadius="20px"
+                    src={JCrew}
+                    alt="Dan Abramov"
+                  />
+                </Center>
+                <br />
+               
+                <Center textAlign={"center"}>
+                  <Text fontWeight={"medium"}>
+                  J Crew is a cloth purchase product website
+                    <br />
+                    <br />
+                    <b>TECH STACK</b>&nbsp;:&nbsp;<b>Html,Css,JavaScript</b>
+                  </Text>
+                </Center>
+                <br />
+                <br />
+                <div
+                  style={{ display: "flex", justifyContent: "space-around" }}
+                >
+                  <a href="https://github.com/shivamgupta8482/jcrewteam">
+                    <Button bg="black" color="white" variant='solid'>Github</Button>
+                  </a>
+                  <a href="https://bejewelled-klepon-a99de5.netlify.app/">
                     <Button bg="black" color="white" variant='solid'>Deploy</Button>
                   </a>
                 </div>

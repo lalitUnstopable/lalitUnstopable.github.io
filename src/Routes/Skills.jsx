@@ -29,32 +29,27 @@ const Skills = () => {
     {
       id: 4,
       name: "ReactJs",
-      link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      link: "https://www.datocms-assets.com/45470/1631110818-logo-react-js.png",
     },
     {
       id: 5,
       name: "Redux",
-      link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+      link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQABXPUzIiiKfjxkWq9of65KP8nGkN5YzuEdowc8kxTjLAQ13KCUylih0r3dra5tmjeQ5Y&usqp=CAU",
     },
     {
       id: 6,
       name: "NodeJs",
-      link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+      link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_6Bm27JjO0xgsT6ocfW920lxBrh1bK5fFZW0gU5vLBjOHa7Xm3UWI-OUyTI5hj7SDpI&usqp=CAU",
     },
     {
       id: 7,
       name: "ExpressJs",
-      link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+      link: "https://blog.logrocket.com/wp-content/uploads/2020/12/express-middlewares-complete-guide.png",
     },
     {
       id: 8,
       name: "Mongo DB",
       link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg",
-    },
-    {
-      id: 9,
-      name: "TypeScript",
-      link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
     },
     {
       id: 10,
@@ -99,7 +94,7 @@ const Skills = () => {
                 noOfLines={1}
                 style={{ marginTop: "90px", padding: "20px", }}
               >
-                My <span>Technical</span> Skills
+                My Technical Skills
               </Heading>
             </Center>
             <br />
@@ -133,11 +128,11 @@ const Skills = () => {
             <Center>
               <Heading
                 as="h1"
-                size="xl"
-                noOfLines={1}
-              // style={{ marginTop: "350px" }}
+                size="3xl"
+                textAlign={"center"}
+                lineHeight="1.2"
               >
-                My <span>Technical</span> Skills
+                My Technical Skills
               </Heading>
             </Center>
             <br />

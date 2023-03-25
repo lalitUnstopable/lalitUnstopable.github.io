@@ -16,8 +16,8 @@ const About = () => {
   return (
    
     <Box id="about">
-        <Box  mt="20px" >
-        <Heading textAlign="center" lineHeight={"2.5"} fontSize="6xl" fontWeight={"bold"} ml="20px" mt="-40px" >My Profile</Heading>
+        <Box  >
+        <Heading textAlign="center" lineHeight={"2.5"} fontSize="6xl" fontWeight={"bold"} ml="20px"  >My Profile</Heading>
 
         <Box  display={"flex"} flexDirection={["column","column","column","row"]} 
          justifyContent={"space-evenly"}  alignItems={"center"} w="100%" m="auto">

@@ -12,7 +12,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 
-import pdf from "../Assets/Lalit-Pawar-Resume.pdf";
+import pdf from "../Assets/Lalit-Pawar-Resume (2).pdf";
 import "../App.css";
 import { TypeAnimation } from "react-type-animation";
 import "../App.css";
@@ -76,12 +76,12 @@ const About = () => {
             <WrapItem >
               <Center>
                 <Image
-                  boxSize="400px"
+                  boxSize="440px"
                   // objectFit='cover'
                   borderRadius="10%"
-                  marginTop="-50px"
-                  marginLeft="20px"
-                  src="https://raw.githubusercontent.com/Potential17/Potential17/master/user%20(2).gif"
+                  marginTop="-80px"
+                  marginLeft="30px"
+                  src="https://www.fegno.com/wp-content/uploads/2022/03/web-development-company-in-kochi.gif"
                   alt="Dan Abramov"
                 />
               </Center>

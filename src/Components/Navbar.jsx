@@ -20,7 +20,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-import pdf from "../Assets/Lalit-Pawar-Resume.pdf";
+import pdf from "../Assets/Lalit-Pawar-Resume (2).pdf";
 import { FaSun, FaMoon } from "react-icons/fa";
 import styles from "./Navbar.module.css";
 import { Link } from "react-scroll";
@@ -112,11 +112,15 @@ function Navbar() {
             >
               CONTACT
             </Link>
-            <a href={pdf} download>
-                        <Button >
+            {/* <a href={pdf} color="orange"> */}
+                        <Button color={"black"} onClick={()=>
+                          window.open(
+                           "https://drive.google.com/file/d/1WsvJapVgFgX-W-6aiOt1IqSWPBGR3Aep/view?usp=share_link"
+                          )
+                        }>
                           RESUME
                         </Button>
-                      </a>
+                      {/* </a> */}
           </HStack>
           <IconButton
             ml="10px"
@@ -132,7 +136,9 @@ function Navbar() {
         borderBottom="1px"
         borderColor="gray.100"
         display={["flex", "flex", "flex", "none"]}
-      
+        zIndex={10}
+        position="sticky"
+        top="0"
       >
         <IconButton
           aria-label="Open Menu"
