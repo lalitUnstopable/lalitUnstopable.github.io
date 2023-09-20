@@ -12,7 +12,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 
-import pdf from "../Assets/Lalit-Pawar-Resume (2).pdf";
+import pdf from "../Assets/Lalit-Pawar-Resume.pdf";
 import "../App.css";
 import { TypeAnimation } from "react-type-animation";
 import "../App.css";

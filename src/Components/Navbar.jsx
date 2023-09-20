@@ -20,7 +20,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-import pdf from "../Assets/Lalit-Pawar-Resume (2).pdf";
+import pdf from "../Assets/Lalit-Pawar-Resume.pdf";
 import { FaSun, FaMoon } from "react-icons/fa";
 import styles from "./Navbar.module.css";
 import { Link } from "react-scroll";

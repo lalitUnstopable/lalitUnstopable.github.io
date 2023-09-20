@@ -53,7 +53,7 @@ const Contact = () => {
                 <Center>
                  <Box >
                <Center>  <Heading padding="25px">Lalit Pawar</Heading></Center>
-                  <Center><Heading >9766922240</Heading></Center>
+                  <Center><Heading >8805844757</Heading></Center>
                   <Center><Heading padding={"25px"} >lalitpawar229@gmail.com</Heading></Center>
                 <Box width="800px" padding={"25px"} display={"flex"} justifyContent="space-between">
                 
@@ -156,10 +156,10 @@ const Contact = () => {
             </Center>
             <Box mt="10px" textAlign={"center"}>
               <Text fontWeight={"bold"} fontSize="35px">Lalit Pawar</Text>
-              <Text fontWeight={"bold"} fontSize="35px">9766922240</Text>
+              <Text fontWeight={"bold"} fontSize="35px">8805844757</Text>
               <Text fontWeight={"bold"} fontSize="35px">lalitpawar229@gmail.com</Text>
             </Box>
-            <Box width="100%" padding={"25px"} display={"flex"} flexDirection="column" gap="15px" justifyContent="space-between">
+            <Box width="100%" padding={"25px"} display={"flex"} flexDirection="column" gap="15px" justifyContent="space-between" >
                 
                 <Button  onClick={()=>
                       window.open(
